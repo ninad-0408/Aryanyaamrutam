@@ -1,0 +1,25 @@
+{
+  "name": "sanctuary",
+  "version": "1.0.0",
+  "description": "Website to explore all sancturies in India and book safaries online.",
+  "main": "home.html",
+  "scripts": {
+    "test": "npm start"
+  },
+  "keywords": [
+    "sanctuary",
+    "bootstrap"
+  ],
+  "author": "Ninad Kalanke",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
