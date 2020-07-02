@@ -4,7 +4,12 @@
   "description": "Website to explore all sancturies in India and book safaries online.",
   "main": "home.html",
   "scripts": {
-    "test": "npm start"
+    "start": "npm run lite",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "test": "npm start",
+    "lite": "lite-server"
   },
   "keywords": [
     "sanctuary",
@@ -13,7 +18,10 @@
   "author": "Ninad Kalanke",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2",
+    "parallelshell": "^3.0.1"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
