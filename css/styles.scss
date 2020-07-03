@@ -16,3 +16,11 @@ $background-pale: #b5bbe9;
         border-radius: 50%;
     }
 }
+.footer{
+    background-color: $background-pale;
+    margin-top: 1000px;
+    padding-top: 20px;
+    address{
+        font-weight: 400;
+    }
+}
