@@ -2,9 +2,9 @@
   "name": "sanctuary",
   "version": "1.0.0",
   "description": "Website to explore all sancturies in India and book safaries online.",
-  "main": "home.html",
+  "main": "index.html",
   "scripts": {
-    "start": "npm run lite",
+    "start": "npm run watch:all",
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange \"css/*scss\" -- npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",

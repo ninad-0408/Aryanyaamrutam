@@ -1,0 +1,18 @@
+$background-dark: #141B4D;
+$background-light: #5e67a8;
+$background-pale: #b5bbe9;
+
+.navbar-dark{
+    background: $background-dark;
+    .nav-link, .navbar-link{
+    font-size: 110%;
+    font-weight: 500;
+}
+.nav-item
+{
+    margin: 0 13px;
+}
+    img{
+        border-radius: 50%;
+    }
+}
