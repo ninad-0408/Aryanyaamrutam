@@ -1,81 +1,94 @@
-$background-dark: #141B4D;
+$background-dark: #141b4d;
 $background-light: #5e67a8;
 $background-pale: #b5bbe9;
 
-.navbar-dark{
-    background: $background-dark;
-    .nav-link, .navbar-link{
+.navbar-dark {
+  background: $background-dark;
+  .nav-link,
+  .navbar-link {
     font-size: 110%;
     font-weight: 500;
-}
-.nav-item
-{
+  }
+  .nav-item {
     margin: 0 13px;
+  }
+  img {
+    border-radius: 50%;
+  }
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
 }
-    img{
-        border-radius: 50%;
-    }
-    .navbar-toggler{
-        border: none;
-        outline: none;
-    }
-}
-.jumbotron{
-    margin-top: 50px;
-    background-color: $background-light;
-    img{
-        border-radius: 200px;
-    }
-    h2{
-        font-size: 250%;
-        font-weight: 500;
-    }
-    h5{
-        font-weight: 500;
-        font-size: 180%;
-    }
-    p{
-        font-size: 120%;
-        font-weight: 400;
-    }
-
-}
-
-h2{
+.jumbotron {
+  margin-top: 50px;
+  background-color: $background-light;
+  img {
+    border-radius: 200px;
+  }
+  h2 {
     font-size: 250%;
     font-weight: 500;
-    padding-bottom: 10px;
+  }
+  h5 {
+    font-weight: 500;
+    font-size: 180%;
+  }
+  p {
+    font-size: 120%;
+    font-weight: 400;
+  }
 }
 
-.carousel{
-    height: 520px;
-    .carousel-item{
-    height: 520px;
-    width: 100vw;
-        img{
-            height: 100%;
-            width: 100%;
-        }
-    }
-    .carousel-indicators li{
-        height: 15px;
-        width: 15px;
-        border-radius: 100%;
-        background-color: $background-dark;
-    }
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding-bottom: 10px;
 }
-.footer{
-    background-color: $background-pale;
-    margin-top: 1000px;
-    padding-top: 20px;
-    address{
-        font-weight: 400;
+.card-body {
+  h4 {
+    padding-top: 10px;
+  }
+}
+.card {
+  margin-bottom: 30px;
+}
+.card-header {
+  font-weight: 400;
+  font-size: 110%;
+}
+.carousel {
+  max-height: 520px;
+  background-color: $background-pale;
+  .carousel-item {
+    max-height: 520px;
+    img {
+      height: 100%;
+      width: 100%;
     }
+  }
+  .carousel-indicators li {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: $background-dark;
+  }
+}
+.footer {
+  background-color: $background-pale;
+  padding-top: 20px;
+  address {
+    font-weight: 400;
+  }
 }
 
-.row-content{
-    margin: 20px 0;
-    padding-bottom: 20px;
-    border-bottom: 1px #ddd ridge;
+.row-content {
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px #ddd ridge;
 }
 
+#emergency {
+  position: absolute;
+  margin-left: 270px;
+}
