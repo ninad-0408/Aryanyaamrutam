@@ -1,6 +1,7 @@
 .navbar-dark {
-  background: #141B4D; }
-  .navbar-dark .nav-link, .navbar-dark .navbar-link {
+  background: #1d1e22; }
+  .navbar-dark .nav-link,
+  .navbar-dark .navbar-link {
     font-size: 110%;
     font-weight: 500; }
   .navbar-dark .nav-item {
@@ -13,18 +14,31 @@
 
 .jumbotron {
   margin-top: 50px;
-  background-color: #5e67a8; }
-  .jumbotron img {
-    border-radius: 200px; }
+  min-height: 400px;
+  position: relative;
+  background-color: black; }
   .jumbotron h2 {
-    font-size: 250%;
-    font-weight: 500; }
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: floralwhite; }
   .jumbotron h5 {
     font-weight: 500;
-    font-size: 180%; }
+    font-size: 1.8rem;
+    color: floralwhite; }
   .jumbotron p {
-    font-size: 120%;
-    font-weight: 400; }
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: floralwhite; }
+
+.jumbotron::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  background: url("../img/header-img.jpg") no-repeat center center/cover; }
 
 h2 {
   font-size: 2.5rem;
@@ -43,7 +57,7 @@ h2 {
 
 .carousel {
   max-height: 520px;
-  background-color: #b5bbe9; }
+  background-color: #dadada; }
   .carousel .carousel-item {
     max-height: 520px; }
     .carousel .carousel-item img {
@@ -53,10 +67,10 @@ h2 {
     height: 15px;
     width: 15px;
     border-radius: 100%;
-    background-color: #141B4D; }
+    background-color: #1d1e22; }
 
 .footer {
-  background-color: #b5bbe9;
+  background-color: #dadada;
   padding-top: 20px; }
   .footer address {
     font-weight: 400; }
@@ -69,3 +83,6 @@ h2 {
 #emergency {
   position: absolute;
   margin-left: 270px; }
+
+.iconcolblack {
+  color: black; }
