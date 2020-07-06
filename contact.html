@@ -34,11 +34,58 @@
                                 class="fa fa-address-book fa-md"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a class="btn navbar-link"><span class="fa fa-sign-in"></span> Login</a>
+                    <a class="btn navbar-link" data-toggle="modal" data-target="#loginmodal"><span class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
         </div>
     </nav>
+
+    <div id="loginmodal" class="modal fade" role="dialog">
+        <div class="container">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">LOGIN</h4>
+                        <button class="close" data-dismiss="modal">
+                            <span class="fa fa-close"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12 row">
+                                    <label for="email" class="col-form-label col-sm-2">Email</label>
+                                    <div class="col-12 col-sm-10">
+                                        <input type="email" id="email" class="form-control" placeholder="Email" required>
+                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                                            with anyone else.</small>
+                                    </div>
+                                </div>
+                                <div class="form-group col-12 row">
+                                    <label for="password" class="col-form-label col-sm-2">Password</label>
+                                    <div class="col-12 col-sm-10">
+                                        <input type="password" id="password" class="form-control"
+                                            placeholder="Passsword" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-check col-10 offset-2">
+                                    <input type="checkbox" id="check" class="form-check-input" checked>
+                                    <label for="check" class="form-check-label">Stay logged in</label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <input type="submit" class="btn btn-primary ml-auto" value="Login">
+                                <button class="btn btn-secondary ml-1" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <header class="jumbotron">
         <div class="container">
