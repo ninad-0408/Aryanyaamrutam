@@ -82,7 +82,8 @@ h2 {
 
 #emergency {
   position: absolute;
-  margin-left: 270px; }
+  display: block;
+  justify-self: end; }
 
 .iconcolblack {
   color: black; }

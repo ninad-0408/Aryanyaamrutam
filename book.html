@@ -22,10 +22,10 @@
                 <span class="fa fa-bars fa-lg"></span>
             </button>
             <div class="collapse navbar-collapse" id="Navbarcoll">
-                <button class="btn btn-danger d-md-none" id="emergency" role="button">Emergency</button>
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item"><a href="./index.html" class="nav-link"><span class="fa fa-home fa-md"></span>
                             Home </a></li>
+                    <button class="btn btn-danger d-sm-none offset-7" id="emergency" role="button">Emergency</button>
                     <li class="nav-item"><a href="./explore.html" class="nav-link"><span
                                 class="fa fa-wpexplorer fa-md"></span> Explore </a></li>
                     <li class="nav-item active"><a href="./book.html" class="nav-link"><span
@@ -35,7 +35,8 @@
                                 class="fa fa-address-book fa-md"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a class="btn navbar-link" data-toggle="modal" data-target="#loginmodal"><span class="fa fa-sign-in"></span> Login</a>
+                    <a class="btn navbar-link" data-toggle="modal" data-target="#loginmodal"><span
+                            class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
         </div>
@@ -57,7 +58,8 @@
                                 <div class="form-group col-12 row">
                                     <label for="email" class="col-form-label col-sm-2">Email</label>
                                     <div class="col-12 col-sm-10">
-                                        <input type="email" id="email" class="form-control" placeholder="Email" required>
+                                        <input type="email" id="email" class="form-control" placeholder="Email"
+                                            required>
                                         <small id="emailHelp" class="form-text text-muted">We'll never share your email
                                             with anyone else.</small>
                                     </div>
@@ -90,11 +92,16 @@
 
     <header class="jumbotron">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center justify-content-center">
                 <div class="col-12 col-sm-6">
                     <h2>Aryanyaamrutam</h2>
                     <h5>Beautiful One Day, Perfect The Next...</h5>
                     <p>Visit sancturies have a great exprience and adventure.</p>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="col-12 justify-content-center">
+                        <a class="btn btn-primary" href="#booksafari" role="button">Book Now</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -108,6 +115,75 @@
                     <li class="breadcrumb-item active">Book</li>
                 </ol>
             </div>
+        </div>
+        <div class="row row-content">
+            <h4 class="col-12">EXPERIENCE OF SAFARIES</h4>
+
+        </div>
+        <div class="row row-content" id="booksafari">
+            <h4 class="col-12">Book your safari now...</h4>
+            <form class="col-12 row bg-light">
+                <div class="col-12 form-row form-group">
+                    <label for="noofpeople" class="col-form-label col-sm-3">Number of person</label>
+                    <div class="col-sm-9 align-self-center" id="noofpeople">
+                        <div class="form-check form-check-inline">
+                            <label for="1" class="radio-inline">
+                                <input type="radio" name="noofpeople" id="1" checked> 1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label for="2" class="radio-inline">
+                                <input type="radio" name="noofpeople" id="2"> 2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label for="3" class="radio-inline">
+                                <input type="radio" name="noofpeople" id="3"> 3</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <label for="4" class="radio-inline">
+                                <input type="radio" name="noofpeople" id="4"> 4</label>
+                        </div>
+                        <small class="text-muted form-text">Booking of maximum 4 people can be done at a time.</small>
+                    </div>
+                </div>
+                <div class="col-12 form-row form-group">
+                    <label for="selectsan" class="col-form-label col-sm-3">Choose Sanctuary</label>
+                    <div class="col-sm-5 align-self-center">
+                        <select name="selectsan" id="selectsan" class="form-control">
+                            <option  class="form-control" selected>Corbett National Park, Uttarakhand</option>
+                            <option  class="form-control" selected>Ranthambore National Park, Rajasthan</option>
+                            <option  class="form-control" selected>Bandipur National Park, Karnataka</option>
+                            <option  class="form-control" selected>Keoladeo Ghana National Park – Bharatpur, Rajasthan</option>
+                            <option  class="form-control" selected>Nagarhole National Park, Karnataka</option>
+                            <option  class="form-control" selected>Sariska National Park, Rajasthan</option>
+                            <option  class="form-control" selected>Kaziranga National Park, Assam</option>
+                            <option  class="form-control" selected>Bhadra Wildlife Sanctuary, Karnataka</option>
+                            <option  class="form-control" selected>Kanha National Park, Madhya Pradesh</option>
+                            <option  class="form-control" selected>Sundarbans National Park, West Bengal</option>
+                            <option  class="form-control" selected>Bandhavgarh National Park, Madhya Pradesh</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 form-row form-group">
+                    <label for="name" class="col-form-label col-sm-3">Full Name of one Person</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control" id="name" placeholder="Name" required>
+                    </div>
+                </div>
+                <div class="col-12 form-row form-group">
+                    <label for="timing" class=" col-sm-3 col-form-label">Choose time</label>
+                    <div class="col-sm-5" id="timing">
+                        <div class="btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-adn active"><input type="radio" checked>8:00 AM</label>
+                            <label class="btn btn-adn"><input type="radio">10:00 AM</label>
+                            <label class="btn btn-adn"><input type="radio">2:00 PM</label>
+                            <label class="btn btn-adn"><input type="radio">5:00 PM</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 form-row form-group">
+                    <button class="btn btn-primary btn-block col-5 offset-3 " role="submit">Book</button>
+                </div>
+            </form>
         </div>
     </div>
 
