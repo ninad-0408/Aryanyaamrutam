@@ -9,6 +9,11 @@
     "watch:scss": "onchange \"css/*scss\" -- npm run scss",
     "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
     "test": "npm start",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* --out-dir='dist/img'",
+    "usemin": "usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin book.html -d dist --htmlmin -o dist/book.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin explore.html -d dist --htmlmin -o dist/explore.html",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "lite": "lite-server"
   },
   "keywords": [
@@ -18,10 +23,15 @@
   "author": "Ninad Kalanke",
   "license": "ISC",
   "devDependencies": {
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
     "lite-server": "^2.5.4",
     "node-sass": "^4.14.1",
     "onchange": "^7.0.2",
-    "parallelshell": "^3.0.1"
+    "parallelshell": "^3.0.1",
+    "rimraf": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
