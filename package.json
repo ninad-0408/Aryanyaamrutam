@@ -1,6 +1,10 @@
 {
   "name": "sanctuary",
   "version": "1.0.0",
+  "engines": {
+    "npm": "6.x",
+    "node": "12.x"
+  },
   "description": "Website to explore all sancturies in India and book safaries online.",
   "main": "index.html",
   "scripts": {
