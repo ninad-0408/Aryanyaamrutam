@@ -22,6 +22,7 @@
                 <span class="fa fa-bars fa-lg"></span>
             </button>
             <div class="collapse navbar-collapse" id="Navbarcoll">
+                <ul class="navbar-nav m-auto">
                     <li class="nav-item"><a href="./index.html" class="nav-link"><span class="fa fa-home fa-md"></span>
                             Home </a></li>
                     <button class="btn btn-danger d-sm-none offset-7" id="emergency" role="button">Emergency</button>
@@ -33,7 +34,8 @@
                                 class="fa fa-address-book fa-md"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a class="btn navbar-link" data-toggle="modal" data-target="#loginmodal"><span class="fa fa-sign-in"></span> Login</a>
+                    <a class="btn navbar-link" data-toggle="modal" data-target="#loginmodal"><span
+                            class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
         </div>
@@ -55,7 +57,8 @@
                                 <div class="form-group col-12 row">
                                     <label for="email" class="col-form-label col-sm-2">Email</label>
                                     <div class="col-12 col-sm-10">
-                                        <input type="email" id="email" class="form-control" placeholder="Email" required>
+                                        <input type="email" id="email" class="form-control" placeholder="Email"
+                                            required>
                                         <small id="emailHelp" class="form-text text-muted">We'll never share your email
                                             with anyone else.</small>
                                     </div>
@@ -106,7 +109,97 @@
                     <li class="breadcrumb-item active">Contact</li>
                 </ol>
             </div>
+            <div class="col-12">
+                <h3>Contact Us</h3>
+                <hr>
+            </div>
         </div>
+        <div class="row row-content">
+            <div class="col-12">
+                <h3>Location Information</h3>
+            </div>
+            <div class="col-12 col-sm-4 offset-sm-1">
+                <h5>Our Address</h5>
+                <address>
+                    121, National highway NH-06<br>
+                    Marien Drive east-20, Mumbai<br>
+                    INDIA<br>
+                    <i class="fa fa-phone fa-md"></i> : +91 9876409380<br>
+                    <i class="fa fa-fax fa-md"></i> : +91 9876409380<br>
+                    <i class="fa fa-envelope fa-md"></i> : <a
+                        href="mailto:randommail@gmail.com">randommail@gmail.com</a>
+                </address>
+            </div>
+            <div class="col-12 col-sm-11 offset-sm-1">
+                <div class="btn-group" role="group">
+                    <a role="button" href="tel:+919876409380" class="btn btn-primary"><i class="fa fa-phone"></i>
+                        Call</a>
+                    <a role="button" href="#" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
+                    <a href="mailto:randommail@gmail.com" class="btn btn-google"><i class="fa fa-envelope-o"></i>
+                        Mail</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-content">
+            <div class="col-12">
+                <h3>Send us your Feedback</h3>
+                <br />
+            </div>
+
+            <div class="col-12 col-lg-9">
+                <form>
+                    <div class="form-group row">
+                        <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="firstname" name="firstname"
+                                placeholder="First Name" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="lastname" name="lastname"
+                                placeholder="Last Name" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="telenum" class="col-md-2 col-form-label">Contact Tel.</label>
+                        <div class="col-3 col-md-2">
+                            <input type="tel" class="form-control" id="areacode" name="areacode"
+                                placeholder="Area Code" />
+                        </div>
+                        <div class="col-9 col-md-8">
+                            <input type="tel" class="form-control" id="telenum" name="telenum"
+                                placeholder="Tele. Number" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="emailid" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="emailid" name="emailid" placeholder="Email" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Feedback</label>
+                        <div class="col-md-10">
+                            <textarea name="feedback" id="feedback" rows="10" class="form-control"
+                                placeholder="Feedback"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-2 col-md-10">
+                            <button type="submit" class="btn btn-primary">
+                                Send Feedback
+                            </button>
+                            <input type="reset" class="btn btn-secondary" value="Reset">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md"></div>
+        </div>
+    </div>
     </div>
 
     <footer class="footer">
@@ -158,15 +251,15 @@
                 </div>
                 <div class="col-12 align-self-center col-sm-3">
                     <div class="text-center">
-                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+" target="_blank"><i
                                 class="fa fa-google-plus fa-lg"></i> </a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
-                                class="fa fa-facebook fa-lg"></i> </a>
-                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i
-                                class="fa fa-linkedin fa-lg"></i> </a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="
+                            target="_blank"><i class="fa fa-facebook fa-lg"></i> </a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"
+                            target="_blank"><i class="fa fa-linkedin fa-lg"></i> </a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/" target="_blank"><i
                                 class="fa fa-twitter fa-lg"></i> </a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/" target="_blank"><i
                                 class="fa fa-youtube fa-lg"></i> </a>
                         <a class="btn btn-social-icon" href="mailto:randommail@gmail.com"><i
                                 class="fa fa-envelope-o fa-lg"></i> </a>

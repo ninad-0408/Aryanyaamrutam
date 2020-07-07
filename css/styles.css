@@ -119,6 +119,7 @@ h4 {
   grid-row: 4 / span 2; }
 
 img[id^=item] {
+  cursor: pointer;
   transition: all 0.7s; }
 
 img[id^=item]:hover {

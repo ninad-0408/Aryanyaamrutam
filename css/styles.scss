@@ -149,6 +149,7 @@ h4{
 }
 
 img[id^=item]{
+  cursor: pointer;
   transition: all 0.7s;
 }
 
