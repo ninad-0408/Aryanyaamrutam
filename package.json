@@ -27,6 +27,7 @@
   "author": "Ninad Kalanke",
   "license": "ISC",
   "devDependencies": {
+    "copyfiles": "^2.3.0",
     "cssmin": "^0.4.3",
     "grunt": "^1.2.0",
     "grunt-browser-sync": "^2.2.0",
