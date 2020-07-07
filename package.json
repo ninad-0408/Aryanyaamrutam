@@ -42,6 +42,7 @@
     "grunt-sass": "^3.1.0",
     "grunt-usemin": "^3.1.1",
     "htmlmin": "0.0.7",
+    "imagemin-cli": "^6.0.0",
     "jit-grunt": "^0.10.0",
     "lite-server": "^2.5.4",
     "node-sass": "^4.14.1",
